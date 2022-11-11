@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Esta pagina contiene elementos compuestos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Explicación de elementos compuestos LaunchX</h1>
+
+    <!-- Labels/Etiquetas -->
+    <label for="inputUno">Ejemplo de input Texto</label>
+    <br>
+
+    <!-- Input/Entradas -->
+    <input type="text" id="inputUno" name="inputUno">
+    <br><br>
+
+    <!-- Tipos de input -->
+    <h2>Input de Texto</h2>
+
+    <label for="inputCorreo">Input de Email</label><br>
+    <input type="email" id="inputCorreo" name="inputCorreo">
+    <br><br>
+
+    <label for="inputNumero">Input de números</label><br>
+    <input type="number" id="inputNumero" name="inputNumero">
+    <br><br>
+
+    <label for="inputPassword">Input de Password</label><br>
+    <input type="password" id="inputPassword" name="inputPassword">
+    <br><br>
+
+    <label for="inputTel">Input de Teléfono</label><br>
+    <input type="tel" id="inputTel" name="inputTel" maxlength="10">
+    <br><br>
+
+    <label for="inputURL">Input de URL</label><br>
+    <input type="url" id="inputURL" name="inputURL">
+
+    <!-- Input selección Multiple -->
+    <h2>Input de selección Multiple</h2>
+    <h3>Selecciona tus condimentos</h3>
+    <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+    <label for="topping1">Cebolla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="cilantro">
+    <label for="topping2">Cilantro</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="tomate">
+    <label for="topping3">Tomate</label><br>
+
+    <!-- Input selección Unica -->
+    <!-- el grupo se define con el atributo name -->
+    <h2>Input de selección Unica</h2>
+    <h3>Selecciona tu salsa</h3>
+    <input type="radio" name="salsas" id="roja" value="Roja">
+    <label for="roja">Roja</label><br>
+    <input type="radio" name="salsas" id="verde" value="verde">
+    <label for="verde">Verde</label><br>
+    <input type="radio" name="salsas" id="morado" value="morado">
+    <label for="morado">Morado</label>
+    
+    <h2>Select</h2>
+    <label for="tacos">De que la orden</label>
+    <select name="tacos" id="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="pastor">Pastor</option>
+        <option value="cueritos">Cueritos</option>
+    </select>
+
+    <h2>Select con input</h2>
+    <label for="refrescos"> Elige tu refresco</label>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-Cola"></option>
+        <option value="Manzanita"></option>
+        <option value="Fresca"></option>
+        <option value="Pepsi"></option>
+        <option value="Coca-Cola light"></option>
+    </datalist>
+    
+    <h2>Input Fechas</h2>
+    <input type="date" id="fecha1" name="fecha1"><br><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br><br>
+    <input type="week" id="fecha3" name="fecha3"><br><br>
+    <input type="time" id="fecha4" name="fecha4"><br><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+
+    <h2>Input de archivos</h2>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+
+    <h2>Input de Color</h2>
+    <input type="color" id="color1" name="color1"> <br><br>
+
+    <h2>Input Rango</h2>
+    <label for="vo1">Volumen entre 0 y 50</label><br>
+    <input type="range" name="vo1" id="vo1" min="0" max="50" value="0" step="1"><br><br>
+
+    <h2>Input botón</h2>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Hola')"><br><br>
+
+    <hr>
+    <!-- Formularios -->
+    <h2>Ejemplo de Formulario</h2>
+    <form action="actions.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre"><br><br>
+        <label for="edad1">Edad:</label>
+        <input type="number" name="edad1" id="edad1" maxlength="0"><br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+</body>
+</html>
