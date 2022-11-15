@@ -1,0 +1,23 @@
+p {
+    font-size: 20px;
+}
+
+.colorRojo {
+    color: red;
+}
+
+.colorRGN {
+    color: rgb(0, 0, 255);
+}
+
+.colorRGBA {
+    color: rgba(93, 217, 94, 0.6);
+}
+
+.colorHEX {
+    color: hotpink;
+}
+
+.colorHSL{
+    color:hsl(34, 57%, 70%);
+}

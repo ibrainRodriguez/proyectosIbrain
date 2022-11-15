@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /* Cascade Style Sheet --> CSS */
+        /* Lo que esta abajo agrega o sobrescribe lo de arriba */
+
+        
+        /* * aplica a todos los elementos del sitio */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Todo lo que este dentro de la etiqueta */
+        body{
+            background-color: #2f4f4f;
+        }
+
+        p {
+            color: #7fffd4;
+            text-align: center;
+        }
+
+        /* Con # seleccionamos el id de un elemento */
+        #subtitulo {
+            color: #6495ed;
+            text-align: right;
+        }
+
+        /* con . seleccionamos las clases que asignamos */
+        .izquierda {
+            color: #f75858e0;
+        }
+
+        /* Podemos asignas las clases específicamente a una etiqueta*/
+        p.izquierda {
+            text-decoration: underline;
+            text-align: left;
+            color: #9400d3;
+        }
+
+        .contraste {
+            background-color: #000000;
+        }
+
+        h1, h2, h3 {
+            font-weight: bold;
+            border-color: #7fffd4;
+            font-family: cursive;
+        }
+
+    </style>
+    
+    <!-- agregando css desde un archivo externo -->
+    <link rel="stylesheet" href="./assets/styles/colores.css">
+    <title>Selectores CSS</title>
+</head>
+<body>
+
+    <!-- Los selectores son 3 tipos: clase, id, name -->
+
+    <h1>Hola Mundo, simple</h1>
+
+    <h2 id="subtitulo" class="izquierda">Adios Mundo, con id subtitulo y clase izquierda</h2>
+
+    <p>Párrafo simple</p>
+    
+    <h3 class="izquierda">Prueba clase header 3</h3>
+
+    <p class="izquierda">Párrafo simple con clase izquierda</p>
+    
+    <h3 class="izquierda contraste">Párrafo con multiples clases</h3>
+
+    <hr>
+
+    <h1>COdigo de colores css</h1>
+    <p class="colorRojo">Prueba color Rojo</p>
+    <p class="colorRGB">Prueba color RGB</p>
+    <p class="colorRGBA">Prueba color RGBA</p>
+    <p class="colorHEX">Prueba color HEX</p>
+    <p class="colorHSL">Prueba color HSL</p>
+    
+</body>
+</html>
