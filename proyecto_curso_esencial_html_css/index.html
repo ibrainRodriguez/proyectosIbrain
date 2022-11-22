@@ -12,22 +12,31 @@
         <p>Contenido</p>
         
         <nav>
-            <p>Setup</p>
-            <ol>
-                <li><a href="#googleChrome">Google Chrome</a></li>
-                <li><a href="#vsCode">Visual Studio Code</a></li>
-                <li><a href="#figma">Figma</a></li>
-                <li><a href="#gitHub">GitHub</a></li>
-            </ol>
-            <p>Conceptos esenciales del Desarrollo Web</p>
-            <ol>
-                <li><a href="#queEsHtml">¿Qué es HTML?</a></li>
-                <li><a href="#etiquetas">Etiquetas</a></li>
-                <li><a href="#queEsDom">DOM</a></li>
-                <li><a href="#semantica">Semántica</a></li>
-                <li><a href="#atributos">Atributos</a></li>
-                <li><a href="#queEsCss">¿Qué es CSS?</a></li>
-            </ol>
+            <details id="menuSetup">
+                <summary>
+                    Setup
+                </summary>
+                <ol>
+                    <li><a href="#googleChrome">Google Chrome</a></li>
+                    <li><a href="#vsCode">Visual Studio Code</a></li>
+                    <li><a href="#figma">Figma</a></li>
+                    <li><a href="#gitHub">GitHub</a></li>
+                </ol>
+            </details>
+
+            <details id="menuConceptos">
+                <summary>
+                    Conceptos esenciales del Desarrollo Web
+                </summary>
+                <ol>
+                    <li><a href="#queEsHtml">¿Qué es HTML?</a></li>
+                    <li><a href="#etiquetas">Etiquetas</a></li>
+                    <li><a href="#queEsDom">DOM</a></li>
+                    <li><a href="#semantica">Semántica</a></li>
+                    <li><a href="#atributos">Atributos</a></li>
+                    <li><a href="#queEsCss">¿Qué es CSS?</a></li>
+                </ol>
+            </details>
         </nav>
 
     </header>
@@ -59,6 +68,21 @@
     <h2>Conceptos esenciales del Desarrollo Web</h2>
     <h3 id="queEsHtml">¿Qué es HTML?</h3>
     <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.</p>
+
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Título&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
 
     <h3 id="etiquetas">Etiquetas</h3>
     <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
@@ -115,5 +139,6 @@
 
     <h3>Suscríbete a nuestro newsletter</h3>
     
+    <script src="./assets/js/menus.js"></script>
 </body>
 </html>
