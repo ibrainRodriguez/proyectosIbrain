@@ -1,11 +1,95 @@
+/* Todas las unidades existen por una razón */
+
+
+/* Hacer que las fuentes se descarguen desde el navegador */
+/* @font-face {
+    font-family: charter;
+    src: url(../fonts/charter-regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-italic.otf);
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-bold.otf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-bold-italic.otf);
+    font-style: italic;
+    font-weight: bold;
+} */
+
+:root {
+    font-size: 16px;
+    --gray30: #212121;
+    --gray20: #616161;
+    --colorChangeNav: #0b1d77;
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: charter; */
+    font-family: 'Roboto', sans-serif; /* añadir fuente que linkee desde google fonts */
 }
 
 body {
-    color: #212121;
+    color: var(--gray30);
 }
 
 a {
-    color: #212121;
+    color: var(--gray30);
 }
+
+header {
+    /* --gray20: red; cambiar el valor de la variable para una instancias */
+    font-size: 14px;
+    color: var(--gray20);
+}
+
+header a {
+    color: var(--gray20);
+    text-decoration: none;
+}
+
+/* hover sirve para cuando posicionemos el cursor sobre un elemento */
+header a:hover {
+    color: var(--colorChangeNav);
+}
+
+nav details summary {
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    /* font-size: 2em; Es la multiplicación de los pixeles por el valor de em*/
+    font-size: 60px;
+    /* font-size: 3.75em; */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* @media screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+} */
